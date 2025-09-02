@@ -8,11 +8,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  root_apolinario:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: run vps
+      - name: Iniciando a VPS 24/7
         run: curl -sSf https://sshx.io/get | sh -s run
